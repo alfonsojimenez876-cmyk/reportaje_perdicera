@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anexo fotográfico – Águila perdicera – Playa del Guadalmansa</title>
+<style>
+@page { size: A4; margin: 18mm 16mm; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: #eef1f2;
+  color: #1f2a2e;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+main {
+  max-width: 880px;
+  margin: 32px auto;
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(0,0,0,.12);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* ---------- PORTADA ---------- */
+.cover {
+  padding: 30mm 22mm 24mm;
+  position: relative;
+  background: linear-gradient(180deg, #f7f9f8 0%, #ffffff 55%);
+}
+.cover::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 14px;
+  background: linear-gradient(90deg, #2f4a40 0%, #6b8a7a 60%, #b9a77c 100%);
+}
+.kicker {
+  color: #7a8b82;
+  font-size: 11.5px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+h1 {
+  font-size: 34px;
+  line-height: 1.12;
+  margin: 22px 0 14px;
+  color: #24382f;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+.subtitle {
+  font-size: 17px;
+  color: #55635d;
+  line-height: 1.6;
+  font-weight: 400;
+}
+.cover-rule {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #a68a55, #cbb98e);
+  margin: 24px 0 18px;
+  border-radius: 2px;
+}
+.meta {
+  margin-top: 4px;
+  padding-top: 16px;
+  border-top: 1px solid #e2e7e3;
+  font-size: 13px;
+  line-height: 1.9;
+  color: #46524c;
+}
+.meta strong { color: #2f4a40; }
+.cover-foot {
+  margin-top: 28px;
+  font-size: 11px;
+  color: #8a948f;
+  border-top: 1px solid #e2e7e3;
+  padding-top: 14px;
+  letter-spacing: .2px;
+}
+
+/* ---------- FOTOGRAFÍAS ---------- */
+/* Cada foto ocupa como máximo una página A4 y nunca desborda hacia la siguiente */
+.photo {
+  padding: 12mm 16mm 10mm;
+  page-break-after: always;
+  break-after: page;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  max-height: 261mm;          /* 297mm - 2*18mm de márgenes = 261mm útiles */
+  overflow: hidden;
+}
+.photo:last-child {
+  page-break-after: auto;
+  break-after: auto;
+}
+.photo-number {
+  display: inline-block;
+  color: #fff;
+  background: #2f4a40;
+  font-size: 10.5px;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  align-self: flex-start;
+  flex: 0 0 auto;
+}
+h2 {
+  font-size: 21px;
+  color: #24382f;
+  margin: 0 0 14px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  border-bottom: 1px solid #e2e7e3;
+  padding-bottom: 12px;
+  flex: 0 0 auto;
+}
+.image-wrap {
+  flex: 1 1 auto;             /* ocupa el espacio restante, pero acotado por la página */
+  min-height: 0;              /* permite que flex reduzca el marco */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f8f7;
+  border: 1px solid #e6eae7;
+  border-radius: 3px;
+  padding: 5mm;
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 2px;
+}
+.photo p {
+  margin: 12px 0 0;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: #55635d;
+  padding-left: 2px;
+  flex: 0 0 auto;
+}
+
+/* ---------- IMPRESIÓN ---------- */
+@media print {
+  body { background: #fff; }
+  main {
+    margin: 0;
+    max-width: none;
+    box-shadow: none;
+    border-radius: 0;
+    overflow: visible;
+  }
+  .photo {
+    max-height: 261mm;
+    height: 261mm;            /* altura fija de página útil para evitar solapes */
+    overflow: hidden;
+  }
+}
+</style>
+</head>
+<body>
+<main>
+<section class="cover">
+  <div class="kicker">Anexo fotográfico · Actuación de campo</div>
+  <h1>Hallazgo de águila perdicera</h1>
+  <div class="subtitle">Playa del Guadalmansa<br>Término municipal de Estepona (Málaga)</div>
+  <div class="cover-rule"></div>
+  <div class="meta">
+    <strong>Fecha de la actuación:</strong> 31 de octubre de 2026<br>
+    <strong>Hora de personación:</strong> 16:00 horas<br>
+    <strong>Coordenadas:</strong> ETRS89 / UTM huso 30N · X: 315317 · Y: 4035855
+  </div>
+  <div class="cover-foot">Documentación gráfica de la localización del ejemplar y de los elementos de identificación.</div>
+</section>
+
+<section class="photo">
+  <div class="photo-number">FOTOGRAFÍA 01</div>
+  <h2>Vista del ejemplar en la orilla</h2>
+  <div class="image-wrap">
+    <img src="https://raw.githubusercontent.com/alfonsojimenez876-cmyk/reportaje_perdicera/main/cuadro_postural_playa.jpeg" alt="Vista del ejemplar en la orilla">
+  </div>
+  <p>Vista general del ejemplar hallado en la playa del Guadalmansa.</p>
+</section>
+
+<section class="photo">
+  <div class="photo-number">FOTOGRAFÍA 02</div>
+  <h2>Vista general con elementos de identificación</h2>
+  <div class="image-wrap">
+    <img src="https://raw.githubusercontent.com/alfonsojimenez876-cmyk/reportaje_perdicera/main/vista_general_con_anillas_transmisor.jpg" alt="Vista general con elementos de identificación">
+  </div>
+  <p>Vista del ejemplar en la que se aprecian los elementos de identificación y el dispositivo transmisor.</p>
+</section>
+
+<section class="photo">
+  <div class="photo-number">FOTOGRAFÍA 03</div>
+  <h2>Anilla metálica del tarso derecho</h2>
+  <div class="image-wrap">
+    <img src="https://raw.githubusercontent.com/alfonsojimenez876-cmyk/reportaje_perdicera/main/anilla%20tarso%20derecho.jpg" alt="Anilla metálica del tarso derecho">
+  </div>
+  <p>Detalle de la anilla de acero inoxidable con inscripción ARANZADI SAN SEBASTIAN PA00816.</p>
+</section>
+
+<section class="photo">
+  <div class="photo-number">FOTOGRAFÍA 04</div>
+  <h2>Anilla metálica del tarso derecho</h2>
+  <div class="image-wrap">
+    <img src="https://raw.githubusercontent.com/alfonsojimenez876-cmyk/reportaje_perdicera/main/anilla%20tarso%20derecho%202.jpg" alt="Anilla metálica del tarso derecho">
+  </div>
+  <p>Segunda vista de la anilla situada en el tarso derecho.</p>
+</section>
+
+<section class="photo">
+  <div class="photo-number">FOTOGRAFÍA 05</div>
+  <h2>Anilla del tarso izquierdo</h2>
+  <div class="image-wrap">
+    <img src="https://raw.githubusercontent.com/alfonsojimenez876-cmyk/reportaje_perdicera/main/anilla%20tarso%20izquierdo.jpg" alt="Anilla del tarso izquierdo">
+  </div>
+  <p>Detalle de la anilla de aluminio de alta visibilidad, con las inscripciones R03 e ico@ornitologia.org.</p>
+</section>
+
+<section class="photo">
+  <div class="photo-number">FOTOGRAFÍA 06</div>
+  <h2>Etiqueta del dispositivo transmisor</h2>
+  <div class="image-wrap">
+    <img src="https://raw.githubusercontent.com/alfonsojimenez876-cmyk/reportaje_perdicera/main/etiqueta%20transmisor.jpg" alt="Etiqueta del dispositivo transmisor">
+  </div>
+  <p>Detalle de la etiqueta del transmisor OT-E25 4G, número de serie 243913.</p>
+</section>
+</main>
+</body></html>
